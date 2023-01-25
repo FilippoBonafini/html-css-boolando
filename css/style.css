@@ -22,8 +22,41 @@ li,a{
     font-weight: 500;
 }
 
+.info-prodotto .nome-prodotto{
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.box-prodotto .like{
+    font-size: 30px;
+}
 
+.box-principale .box-prodotto i{
+    color: rgb(91, 91, 91);
+}
+
+.box-prodotto .tag .sconto{
+    background-color: rgba(255, 0, 0, 0.537);
+    color: white;
+}
+
+.box-prodotto .tag .sostenibilità{
+    background-color: rgba(0, 128, 0, 0.583);
+    color: rgb(255, 255, 255);
+}
+
+.info-prodotto .prezzo-attuale{
+    color: red;
+}
+
+.info-prodotto .prezzo-scontato{
+    text-decoration: line-through;
+}
+
+.info-prodotto .prezzo-attuale,
+.info-prodotto .prezzo-scontato{
+    line-height: 35px;
+}
 
 /* HEADER  */
 header{
@@ -80,11 +113,6 @@ header{
 
 }
 
-.box-principale .box-prodotto i{
-    color: rgb(91, 91, 91);
-
-}
-
 .box-prodotto .box-img{
     position: relative;    
 }
@@ -99,7 +127,6 @@ header{
     top: 0;
     right: 0;
     padding: 15px;
-    font-size: 30px;
 }
 
 .box-prodotto .tag{
@@ -112,13 +139,14 @@ header{
     padding: 5px;
     margin-right: 5px;
 }
-.box-prodotto .tag .sconto{
-    background-color: rgba(255, 0, 0, 0.537);
-    color: white;
+
+.info-prodotto{
+    padding-top: 10px;
 }
 
-.box-prodotto .tag .sostenibilità{
-    background-color: rgba(0, 128, 0, 0.583);
-    color: white;
+
+.hover{
+    display: none;
 }
+
 /* /MAIN  */
