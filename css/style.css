@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-li,a{
+li,a,h3{
     text-decoration: none;
     list-style-type:none;
     color: rgb(255, 255, 255);
@@ -58,9 +58,22 @@ li,a{
     line-height: 35px;
 }
 
+.container-footer .sezione-social{
+    color: white;
+}
+
+.sezione-social li{
+    font-size: 30px;
+}
+
+.sezione-info li{
+    font-size: 13px;
+    padding-top: 10px;
+}
+
 /* HEADER  */
 header{
-    background-color: orange;
+    background-color: #ff6900;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -78,7 +91,7 @@ header{
 .header-container img{
     height: 40px;
     display: block;
-    margin:10px;
+    margin:20px;
 }
 
 .header-container ul{
@@ -92,6 +105,8 @@ header{
 .header-container ul:last-child{
     justify-content: right;
 }
+
+
 /* /HEADER  */
 
 
@@ -102,7 +117,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 120px auto 50px auto;
     gap: 10px;
     justify-content: space-between;
 }
@@ -150,3 +165,26 @@ header{
 }
 
 /* /MAIN  */
+
+/* FOOTER  */
+
+footer{
+    background-color: #1a1a1a;
+}
+.container-footer{
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.container-footer .menu-footer,
+.container-footer .sezione-social ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 13px;
+}
+
+/* /FOOTER  */
