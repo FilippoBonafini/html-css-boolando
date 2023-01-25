@@ -217,9 +217,6 @@ header a:hover{
     display: none;
 }
 
-.hover{
-    transition-duration: 2s;
-}
 
 .box-img .fa-heart,
 .box-img .fa-cart-shopping{
