@@ -29,6 +29,7 @@ li,a{
 header{
     background-color: orange;
     position: fixed;
+    z-index: 999;
     top: 0;
     right: 0;
     left: 0;
@@ -58,4 +59,66 @@ header{
 .header-container ul:last-child{
     justify-content: right;
 }
+/* /HEADER  */
 
+
+
+/* MAIN  */
+
+.box-principale{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 120px auto;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.box-principale .box-prodotto{
+    width: calc(33% - 10px);
+    padding-bottom: 40px;
+
+}
+
+.box-principale .box-prodotto i{
+    color: rgb(91, 91, 91);
+
+}
+
+.box-prodotto .box-img{
+    position: relative;    
+}
+
+.box-prodotto img{
+    width: 100%;
+    display: block;
+}
+
+.box-prodotto .like{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.box-prodotto .tag{
+    position: absolute;
+    bottom: 20px;
+}
+
+.box-prodotto .tag .sconto,
+.box-prodotto .tag .sostenibilità{
+    padding: 5px;
+    margin-right: 5px;
+}
+.box-prodotto .tag .sconto{
+    background-color: rgba(255, 0, 0, 0.537);
+    color: white;
+}
+
+.box-prodotto .tag .sostenibilità{
+    background-color: rgba(0, 128, 0, 0.583);
+    color: white;
+}
+/* /MAIN  */
