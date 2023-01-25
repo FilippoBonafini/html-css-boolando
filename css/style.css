@@ -27,7 +27,7 @@ li,a,h3{
     font-weight: 500;
 }
 
-.box-prodotto .like{
+.box-prodotto .like,.add-carrello{
     font-size: 30px;
 }
 
@@ -79,6 +79,8 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    -webkit-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.43); 
+    box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.43);
 }
 
 .header-container{
@@ -106,6 +108,12 @@ header{
     justify-content: right;
 }
 
+header a:hover{
+    color: #1a1a1a;
+    font-size: 20px;
+    
+}
+
 
 /* /HEADER  */
 
@@ -125,11 +133,12 @@ header{
 .box-principale .box-prodotto{
     width: calc(33% - 10px);
     padding-bottom: 40px;
-
 }
 
 .box-prodotto .box-img{
-    position: relative;    
+    position: relative;  
+    -webkit-box-shadow: -1px 0px 23px 8px rgba(0,0,0,0.35); 
+    box-shadow: -1px 0px 23px 8px rgba(0,0,0,0.35);  
 }
 
 .box-prodotto img{
@@ -143,10 +152,29 @@ header{
     right: 0;
     padding: 15px;
 }
+.box-prodotto .add-carrello{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 15px;
+}
 
 .box-prodotto .tag{
     position: absolute;
     bottom: 20px;
+}
+
+.box-prodotto .esaurito{
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    background-color: rgba(188, 28, 28, 0.623);
+    font-size: 50px;
+    font-weight: 600px;
+    text-align: center;
+    -webkit-box-shadow: 1px 14px 23px 8px rgba(199,20,79,0.25); 
+    box-shadow: 1px 14px 23px 8px rgba(199,20,79,0.25);
 }
 
 .box-prodotto .tag .sconto,
@@ -164,6 +192,31 @@ header{
     display: none;
 }
 
+
+.box-1:hover .hover,
+.box-2:hover .hover,
+.box-3:hover .hover,
+.box-4:hover .hover,
+.box-5:hover .hover,
+.box-6:hover .hover{
+    display: block;
+}
+
+.box-1:hover .not-hover,
+.box-2:hover .not-hover,
+.box-3:hover .not-hover,
+.box-4:hover .not-hover,
+.box-5:hover .not-hover,
+.box-6:hover .not-hover{
+    display: none;
+}
+
+.box-principale .box-prodotto .fa-heart:hover {
+    color: red;}
+
+.box-principale .box-prodotto .fa-cart-shopping:hover {
+    color: #ff6900;}
+    
 /* /MAIN  */
 
 /* FOOTER  */
@@ -187,4 +240,15 @@ footer{
     gap: 13px;
 }
 
+.sezione-social i,
+.menu-footer a{
+    transition-duration: 0,3s;
+    }
+
+.menu-footer a:hover{
+    text-decoration: underline;
+}
+.sezione-social i:hover{
+font-size: 40px;
+}
 /* /FOOTER  */
