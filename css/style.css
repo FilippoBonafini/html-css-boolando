@@ -81,6 +81,7 @@ header{
     left: 0;
     -webkit-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.43); 
     box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.43);
+    transition-duration: 2s;
 }
 
 .header-container{
@@ -107,6 +108,11 @@ header{
 .header-container ul:last-child{
     justify-content: right;
 }
+
+header a{
+    transition-duration: 0.5s;
+}
+
 
 header a:hover{
     color: #1a1a1a;
@@ -211,11 +217,24 @@ header a:hover{
     display: none;
 }
 
+.hover{
+    transition-duration: 2s;
+}
+
+.box-img .fa-heart,
+.box-img .fa-cart-shopping{
+    transition-duration: 0.2s;
+}
+
 .box-principale .box-prodotto .fa-heart:hover {
-    color: red;}
+    color: red;
+    font-size: 34px;    
+}
 
 .box-principale .box-prodotto .fa-cart-shopping:hover {
-    color: #ff6900;}
+    color: #ff6900;
+    font-size: 34px;
+}
     
 /* /MAIN  */
 
@@ -242,7 +261,7 @@ footer{
 
 .sezione-social i,
 .menu-footer a{
-    transition-duration: 0,3s;
+    transition-duration: 0.3s;
     }
 
 .menu-footer a:hover{
